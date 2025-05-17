@@ -1,0 +1,50 @@
+# Animation Learning Notebook Project Rules
+
+## File Organization
+- Three.js examples should be placed in `components/1. ThreeJs/`
+- GSAP examples should be placed in `components/2. GSAP/`
+- Framer Motion examples should be placed in `components/3. FramerMotion/`
+- File names should be prefixed with numbers (1, 2, 3...) for ordering
+- Each file should export a default component
+
+## Three.js Best Practices
+- Use React Three Fiber for React integration
+- Ensure proper cleanup in useEffect returns
+- Use refs to store Three.js objects
+- Use useFrame for animations
+- Canvas should have specific dimensions or fill parent
+
+## GSAP Best Practices
+- Initialize GSAP animations in useEffect
+- Store animation references for cleanup
+- Clear animations in useEffect cleanup function
+- Use GSAP timelines for complex animations
+- Consider using GSAP's Context plugin for scoping
+
+## Framer Motion Best Practices
+- Use variants for coordinated animations
+- Use AnimatePresence for enter/exit animations
+- Manage layout animations with layoutId
+- Use motion.div (or other motion elements) consistently
+- Ensure proper types for motion props
+
+## Documentation Standards
+- Each component should have JSDoc comments
+- Include explanation of the technique being demonstrated
+- Document key animation parameters
+- List browser compatibility notes if relevant
+- Include performance considerations for complex animations
+
+## Code Style
+- Use TypeScript for all components
+- Follow functional component pattern
+- Use hooks for state and effects
+- Use destructuring for props
+- Avoid inline styles when possible
+
+## Example Structure
+- Each example should be self-contained
+- Include controls when appropriate
+- Provide reasonable defaults
+- Include error handling
+- Show loading states when necessary 
